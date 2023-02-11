@@ -1,0 +1,93 @@
+baseurl = "https://nekonyaa-chan.github.io/"
+languageCode = "ja-jp"
+theme = "fuji"
+paginate = 5
+defaultContentLanguage = "ja"
+canonifyurls = true
+enableRobotsTXT = true
+summaryLength = 100
+enableGitInfo= true
+
+[params]
+author = "katoestasbela"
+subTitle = "美しき世界"
+sourceURL = "https://katoestasbela.github.io/"
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "post"
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 4
+
+# show selector to switch language
+showLanguageSelector = false
+
+# set theme to full screen width
+fullWidthTheme = false
+
+# center theme with default width
+centerTheme = false
+
+# set a custom favicon (default is a `themeColor` square)
+# set post to show the last updated
+# If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+showLastUpdated = true
+# Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+# updatedDatePrefix = "Updated"
+
+# set all headings to their default size (depending on browser settings)
+# it's set to `true` by default
+# oneHeadingSize = false
+[params.twitter]
+# set Twitter handles for Twitter cards
+# see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+# do not include @
+creator = "katoestasbela"
+site = "https://katoestasbela.github.io/"
+
+[languages]
+[languages.ja]
+languageName = "Japanese"
+title = "belega mondo"
+subtitle = "美しき世界"
+owner = "katoestasbela"
+keywords = "Computer"
+copyright = "© 2023 Powered by Hugo"
+menuMore = "続きを読む"
+readMore = "続きを読む"
+readOtherPosts = "ほかの投稿も読む"
+missingContentMessage = "ページが見つかりませんでした...."
+missingBackButtonLabel = "ホームページへ戻る"
+
+logoText = "katoestasbela"
+logoHomeLink = "https://katoestasbela.github.io/"
+[menu]
+[[menu.nav]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.nav]]
+
+identifier = "about"
+name = "About"
+url = "/about"
+[[menu.nav]]
+identifier="privacypolicy"
+name="PrivacyPolicy"
+url="/privacypolicy"
+[[menu.nav]]
+
+identifier="RSS"
+name ="RSS"
+url= "/index.xml"
+[[menu.link]]
+name = "GitHub"
+url = "https://github.com/katoestasbela"
+enableGitInfo = true
+[[menu.link]]
+name = "Twitter"
+url = "https://twitter.com/katoestasbela"
+enableGitInfo = true
+
+[frontmatter]
+lastmod = [':git', ':fileModTime']
